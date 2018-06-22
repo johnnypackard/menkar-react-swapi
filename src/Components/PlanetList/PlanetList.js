@@ -7,7 +7,7 @@ class PlanetList extends Component {
             <ul>
                 {
                     this.props.planetList.map(planet => (
-                        <li key={planet.url}>
+                        <li key={Planets.url}>
                             {planet.name}
                         </li>
                     ))

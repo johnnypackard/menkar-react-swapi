@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import { BrowserRouter as Router, Link, Route } from 'react-router-dom';
 import './App.css';
 import Header from '../Header/Header';
+// import Planet from '../Planet/Planet';
 import PlanetList from '../PlanetList/PlanetList';
 
 class App extends Component {
@@ -44,6 +46,7 @@ class App extends Component {
     return (
       <div className="App">
         <Header />
+        {/* <Planet planet={this.state.planet} /> */}
         <PlanetList planetList={this.state.planetList}/>
       </div>
     )
